@@ -15,17 +15,7 @@ const { addUser, removeUser, getUser, getUsersInRoom,addBoard,getBoardsOfRoom,re
 
 app.use(cors());
 app.use(express.json());
-//gets
-const getuser =require('./routes/GetUser');
-const getemail =require('./routes/GetEmail');
-//posts
-const postuser =require('./routes/PostUser');
 
-app.use(express.urlencoded({ extended: true }))
-app.use(express.json());
-app.use('/',getuser);
-app.use('/getemail',getemail);
-app.use('/',postuser);
 //socket
 io.on('connection', (socket) =>{
 
@@ -104,7 +94,17 @@ connection.once('open', () => {
   console.log("MongoDB database connection established successfully");
 })
 
+//gets
+const getuser =require('./routes/GetUser');
+const getemail =require('./routes/GetEmail');
+//posts
+const postuser =require('./routes/PostUser');
 
+app.use(express.urlencoded({ extended: true }))
+app.use(express.json());
+app.use('/',getuser);
+app.use('/getemail',getemail);
+app.use('/',postuser);
 
 if (process.env.NODE_ENV === 'production') {
   // Set static folder
