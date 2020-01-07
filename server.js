@@ -108,7 +108,7 @@ app.use('/',postuser);
 
 if (process.env.NODE_ENV === 'production') {
   // Set static folder
-  app.use(express.static('client/build'));
+  express.static(path_join(__dirname, '/client/build'))
 }
 server.listen(port, () => {
   console.log(`Server is running on port: ${port}`);
