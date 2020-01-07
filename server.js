@@ -107,11 +107,12 @@ app.use('/getemail',getemail);
 app.use('/',postuser);
 
 if (process.env.NODE_ENV === 'production') {
-  // Set static folder
-  app.use('/', express.static(path.join(__dirname, '/client/build')));
-  app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '/client/build', 'index.html'));
-  });
+  // Serve any static files
+  app.use(express.static(path.join(__dirname, 'client/build')))
+  // Handle React routing, return all requests to React app
+  app.get('*', (request, response) => {
+    response.sendFile(path.join(__dirname, 'client/build', 'index.html'))
+  })
 }
 server.listen(port, () => {
   console.log(`Server is running on port: ${port}`);
