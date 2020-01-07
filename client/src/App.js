@@ -17,6 +17,7 @@ function App() {
       <Route exact path="/singleplayer" component={SinglePlayer} />
       <LoginProtected exact path="/multiplayer" component={Join} />
       <LoginProtected exact path="/multiplayer/game" component={Multiplayer} />
+      <Route component={Home}/>
     </Switch>
   </>
   );
