@@ -1,0 +1,73 @@
+@keyframes fadeout {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fadeouttop {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.home{
+    background-image: url(../images/battleship.jpg);
+    /*background-image: url(../images/battleship.jpg);
+    background-size: cover !important;
+    background-position: center -10px;*/
+    height: 100vh;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    opacity: 1;
+    animation: fadeout 2.5s ease-in-out;
+    transition: background-position 1.2s ease !important;
+}
+.home-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+.home-container button{
+    width: 35%;
+    height: 10%;
+    padding: .29rem 1.5rem;
+    line-height: 1.5;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #fff;
+    background-color: transparent;
+    background-image: none;
+    border-color: #fff;
+    transition: background 0.8s ease 0s!important;
+}
+.home-container button:hover{
+    color: #212529;
+    background-color: #fff;
+    border-color: #fff;
+}
+.home-container button:first-child{
+    animation: fadeouttop 1.5s ease forwards;
+    animation-delay: 1.6s!important;
+    opacity: 0;
+    margin-bottom: 1rem;
+}
+.home-container button:last-child{
+    animation: fadeouttop 2s ease forwards;
+    animation-delay: 1.9s!important;
+    opacity: 0;
+}

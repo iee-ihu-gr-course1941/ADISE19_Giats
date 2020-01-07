@@ -1,0 +1,14 @@
+.singleplayer{
+    height: 100vh;
+    width: 100%;
+    background-color: #262f3a;
+}
+.singleplayer-container{
+    position: absolute;
+    top:5.8rem;
+    height: 85.8%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+}

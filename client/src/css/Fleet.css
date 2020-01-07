@@ -1,0 +1,464 @@
+.fleet{
+    flex:0.6 !important;
+}
+.fleet-container{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+.fleet-myfleet{
+    flex:1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #262f3a;   
+}
+.fleet-myfleet-name{
+    background-color: #505c6a;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.3% 3%;
+    position: absolute;
+    top:10.5%;
+    z-index: 1;
+}
+.fleet-myfleet-name:before{
+    border-radius: 0.4rem;
+    z-index: -1;
+	content: "";
+	position: absolute;
+	left: -20%;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: inherit;
+	-webkit-transform: skewX(30deg);
+	-moz-transform: skewX(30deg);
+	-ms-transform: skewX(30deg);
+	transform: skewX(30deg);
+}
+.fleet-myfleet-name:after{
+    border-radius: 0.4rem;
+    z-index: -1;
+	content: "";
+	position: absolute;
+	right: -20%;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: inherit;
+	-webkit-transform: skewX(-30deg);
+	-moz-transform: skewX(-30deg);
+	-ms-transform: skewX(-30deg);
+	transform: skewX(-30deg);
+}
+.fleet-myfleet div:nth-child(2){
+    background-color: #3a4552;
+    height: 94%;
+    width: 94%;
+    display: flex;
+    justify-content: center;
+}
+.fleet-myfleet div table{
+    padding-top:1.5rem;
+    border-spacing: 0;
+    width: 90%;
+    height: 98%;
+}
+.fleet-myfleet div table td{
+    padding: 0;
+    width:3%;
+    height: 9%;
+    position: relative;
+    background-color: #343e4a;
+    text-align: center;
+    border-bottom: 2px solid #333;
+    border-right: 2px solid #333;
+}
+.fleet-myfleet div table td >div{
+    position:relative;
+    height:100%; 
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#c8e5f2 !important;
+}
+.splash{
+    position:relative !important;
+    width: 50% !important;
+    z-index: 5!important; 
+    filter: invert(45%) sepia(84%) saturate(1472%) hue-rotate(208deg) brightness(102%) contrast(103%);
+}
+.explosion{
+    position:relative !important;
+    width: 50% !important;
+    z-index: 5!important; 
+}
+.fleet-myfleet-number{  
+    color:#fff;
+    background-color:#343e4a !important;
+}  
+
+.fleet-fleets{
+    flex:1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #262f3a; 
+}
+.fleet-fleets-container{
+    background-color: #3a4552;
+    height: 94%;
+    width: 94%;
+    display: flex;
+    justify-content: center;
+}
+.fleet-fleets-container-center{
+    padding-top:0.5rem;
+    width: 90%;
+    height: 90%;
+}
+.fleet-fleets-container-center-row{
+    background-color: #3a4552;
+    width: 100%;
+    height: 35vh;
+    overflow-y: scroll;
+}
+.fleet-fleets-container-center-row >div{
+    width: 100%;
+    height: 48%;
+    padding-bottom: 1rem;
+}
+.fleet-fleets-container-center-row >div >div{
+    width: 48%;
+    height: 100%;
+    background-color: #3a4552;
+    border-radius: 0.4rem;  
+}
+.fleet-fleets-container-center-row >div >div >div{
+    height: 100%;
+}
+.fleet-fleets-Carrier{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    width: 100%;
+    height: 84%;
+}
+.fleet-fleets-Carrier img{
+    align-self: center;
+    width: 20%;
+}
+.fleet-fleets-Battleship{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    width: 100%;
+    height: 84%;
+}
+.fleet-fleets-Battleship img{
+    align-self: center;
+    width: 13%;
+}
+.fleet-fleets-Destroyer{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    width: 100%;
+    height: 84%;
+}
+.fleet-fleets-Destroyer img{
+    align-self: center;
+    width: 13%;
+}
+.fleet-fleets-Submarine{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    width: 100%;
+    height: 84%;
+}
+.fleet-fleets-Submarine img{
+    align-self: center;
+    width: 13%;
+}
+.fleet-fleets-Patrol_Boat{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    width: 100%;
+    height: 84%;
+}
+.fleet-fleets-Patrol_Boat img{
+    align-self: center;
+    width: 13%;
+}
+.fleet-fleets-weapon{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    width: 100%;
+    height: 84%;
+}
+.fleet-fleets-weapon img{
+    align-self: center;
+    width: 40%;
+}
+.fleet-fleets-weapon2{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    width: 100%;
+    height: 84%;
+}
+.fleet-fleets-weapon2 img{
+    align-self: center;
+    width: 14%;
+}
+.fleet-fleets-container-center-row >div >div:first-child{
+    float: left;
+}
+.fleet-fleets-container-center-row >div >div:last-child{
+    float: right;
+}
+.fleet-fleets-label{
+    background-color: #505c6a;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 1% 1%;
+    left: 40%;
+    top:18%;
+    z-index: 3;
+}
+.fleet-fleets-container-center-rotate{
+    padding-bottom: 0.5rem;
+    margin-top: 2%;
+    float: right;
+    cursor: pointer;
+    transition-duration: 1.5s;
+    transition-property: transform;
+}
+.fleet-fleets-container-center-rotate:hover{
+    transform: rotate(360deg);
+}
+.fleet-fleets-container-center-random{
+    padding-bottom: 0.5rem;
+    float: left;
+    cursor: pointer;
+}
+.fleet-fleets-container-center-random button{
+    padding: .29rem 0.3rem;
+    max-width: 80%;
+    line-height: 1.5;
+    border-radius: .25rem;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: .7rem;
+    color: #fff;
+    background-color: #818a91;
+    border-color: #818a91;
+    transition: background 0.8s ease 0s!important;
+}
+.fleet-fleets-container-center-random button:hover{
+    color: #fff;
+    background-color: #333;
+    border-color: #333;
+}
+.fleet-fleets-container-center-start{
+    padding-bottom: 0.5rem;
+    float: left;
+    cursor: pointer;
+}
+.fleet-fleets-container-center-start button{
+    padding: .29rem 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    cursor: pointer;
+    font-size: .7rem;
+    font-weight: bold;
+    color: #333;
+    background-color: #76c47d;
+    border-color: #76c47d;
+    transition: background 0.8s ease 0s!important;
+}
+.fleet-fleets-container-center-start button:hover{
+    color: #fff;
+    background-color: #333;
+    border-color: #333;
+}
+.fleet-opponentfleet{
+    flex:1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #262f3a;   
+}
+.fleet-opponentfleet-name{
+    background-color: #505c6a;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.3% 1.5%;
+    position: absolute;
+    top:10.5%;
+    z-index: 3;
+}
+.fleet-opponentfleet-name:before{
+    border-radius: 0.4rem;
+    z-index: -1;
+	content: "";
+	position: absolute;
+	left: -20%;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: inherit;
+	-webkit-transform: skewX(30deg);
+	-moz-transform: skewX(30deg);
+	-ms-transform: skewX(30deg);
+	transform: skewX(30deg);
+}
+.fleet-opponentfleet-name:after{
+    border-radius: 0.4rem;
+    z-index: -1;
+	content: "";
+	position: absolute;
+	right: -20%;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: inherit;
+	-webkit-transform: skewX(-30deg);
+	-moz-transform: skewX(-30deg);
+	-ms-transform: skewX(-30deg);
+	transform: skewX(-30deg);
+}
+.fleet-opponentfleet div:nth-child(2){
+    background-color: #3a4552;
+    height: 94%;
+    width: 94%;
+    display: flex;
+    justify-content: center;
+}
+.fleet-opponentfleet  div table{
+    padding-top:1.5rem;
+    border-spacing: 0;
+    width: 90%;
+    height: 98%;
+}
+.fleet-opponentfleet  div table td{
+    padding: 0;
+    width:3%;
+    height: 9%;
+    position: relative;
+    background-color: #343e4a;
+    text-align: center;
+    border-bottom: 2px solid #333;
+    border-right: 2px solid #333;
+}
+.fleet-opponentfleet  div table td div{
+    position:relative;
+    height:100%; 
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#c8e5f2 !important;
+}
+.fleet-opponentfleet-number{  
+    color:#fff;
+    background-color:#343e4a !important;
+}  
+.carrier-katheta{
+    position: absolute !important;
+    width: 90% !important;
+    z-index: 3!important;
+    height: 530%!important;
+    top:0rem!important;
+}
+.carrier-orizontia{
+    position: absolute!important;
+    width: 125%!important;
+    z-index: 3!important;
+    height: 680%!important;
+    left:190%!important;
+    transform: rotate(90deg)!important;
+}
+.battleship-katheta{
+    position: absolute!important;
+    width: 90%!important;
+    z-index: 3!important;
+    height: 430%!important;
+    top:0rem!important;
+}
+.battleship-orizontia{
+    position: absolute!important;
+    width: 110%!important;
+    z-index: 3!important;
+    height:540%!important;
+    left:160%!important;
+    transform: rotate(90deg)!important;
+}
+.destroyer-katheta{
+    position: absolute!important;
+    width: 90%!important;
+    z-index: 3!important;
+    height: 320%!important;
+    top:0rem!important;
+}
+.destroyer-orizontia{
+    position: absolute!important;
+    width: 100%!important;
+    z-index: 3!important;
+    height:370%!important;
+    left:100%!important;
+    transform: rotate(90deg)!important;
+}
+.patrol-boat-katheta{
+    position: absolute!important;
+    width: 90%!important;
+    z-index: 3!important;
+    height: 220%!important;
+    top:0rem!important;
+}
+.patrol-boat-orizontia{
+    position: absolute!important;
+    width: 100%!important;
+    z-index: 3!important;
+    height:260%!important;
+    left:50%!important;
+    transform: rotate(90deg)!important;
+}
+.fleet-opponentfleet-hover{
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    z-index: 111;
+    margin:0; /* If you want no margin */
+    padding:0; /*if your want to padding */
+
+}
+.fleet-opponentfleet-hover:hover{
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    content:url('../images/weapon-crosshair.svg');
+    z-index: 111;
+    margin:0; /* If you want no margin */
+    padding:0; /*if your want to padding */  
+    cursor: pointer;
+}

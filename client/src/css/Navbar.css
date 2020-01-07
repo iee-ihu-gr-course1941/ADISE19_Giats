@@ -1,0 +1,197 @@
+@keyframes animation {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+        display: none;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+        display: block;
+    }
+}
+.navbar{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    width: 100%;
+    margin: auto;
+    padding:10px 4rem;
+    height: 96px;
+}
+.navbar-container{
+    padding-top:5px;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-container-logo{   
+    justify-self: flex-start;
+}
+.logo-image {
+    animation: animation 1.3s ease forwards;
+    opacity: 0;
+    transition-delay: 0.2s!important;
+    animation-delay: 0.2s!important;
+    background: url(../images/logo.png);
+    background-size:200px 56px;
+    height: 56px;
+    width: 200px;
+   
+}
+.navbar-container-login{
+    justify-self: flex-end;
+    align-self: center;
+    animation: animation 1.8s ease forwards;
+    opacity: 0;
+    transition-delay: 0.4s!important;
+    animation-delay: 0.4s!important;
+    outline: none;
+    transition: opacity 0.3s ease, transform 0.5s ease;
+}
+.navbar-container-login button{
+    padding: .29rem 1.5rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    cursor: pointer;
+    font-size: .875rem;
+    color: #fff;
+    background-color: transparent;
+    background-image: none;
+    border-color: #fff;
+    transition: background 0.8s ease 0s!important;
+}
+.navbar-container-login button:hover{
+    color: #212529;
+    background-color: #fff;
+    border-color: #fff;
+}
+.account{
+    position: static!important;
+}
+.account-container{
+    color: #fff;
+    cursor: pointer;
+    padding-left: 0!important;
+    padding-right: 0!important;
+    align-items: center!important;
+    display: flex!important;
+    justify-content: flex-end!important;
+    background-color: transparent;
+    font-weight: 400;
+    text-decoration: none;
+}
+.account-container::after{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+}
+.account-image{
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    font-size: .875rem;
+    line-height: 1.45;
+}
+.account-image img{
+    border-radius: 50%!important;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-style: none;
+    width: 40px;
+    text-align: center;
+    white-space: nowrap;
+}
+.account-name{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-left: .5rem!important;
+    padding-right: .25rem!important;
+}
+.account-name span{
+    white-space: nowrap;
+}
+.account-name strong{
+    font-weight: bolder;
+    cursor: pointer;
+    color: #fff;
+}
+.account-menu{
+    display: block;
+    position: absolute;
+    transform: translate3d(140px, 60px, 0px);
+    top: -25px;
+    right:5rem;
+    will-change: transform;
+    background: #fff;
+    width: 200px;
+    bottom: auto;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.13);
+    padding-bottom: 0!important;
+    padding-top: 0!important;
+    margin-top: 1rem!important;
+    z-index: 1000;
+    min-width: 10rem;
+    padding: .5rem 0;
+    margin: .125rem 0 0;
+    font-size: .875rem;
+    color: #333;
+    text-align: left;
+    list-style: none;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+}
+.account-menu::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.account-menu ul{
+    margin-bottom: 0!important;
+    padding-left: 0;
+    list-style: none;
+    margin-top: 0;
+    font-size: .875rem;
+    color: #333;
+    text-align: left;
+    font-weight: 400;
+    line-height: 1.45;
+}
+.account-menu ul li{
+    line-height: 24px;
+    color: #9b9b9b!important;
+    padding-left: 1rem!important;
+    padding-right: 1rem!important;
+    padding-bottom: .5rem!important;
+    padding-top: .5rem!important;
+    margin-left: .5rem!important;
+    margin-right: .5rem!important;
+    margin-top: .5rem!important;
+    text-decoration: none;
+    background-color: transparent;
+}
+.account-menu ul li a{
+    color: #9b9b9b!important;
+    text-decoration: none;
+}
