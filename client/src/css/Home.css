@@ -18,9 +18,8 @@
 }
 .home{
     background-image: url(../images/battleship.jpg);
-    /*background-image: url(../images/battleship.jpg);
     background-size: cover !important;
-    background-position: center -10px;*/
+    background-position: center -10px;
     height: 100vh;
     display: table;
     table-layout: fixed;
