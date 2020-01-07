@@ -4,13 +4,11 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "install-client": "cd client && npm install",
     "start": "node server.js",
     "server": "nodemon server.js",
-    "client": "cd client && npm start",
+    "client": "npm run start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "build": "cd client && npm run build",
-    "heroku-postbuil": "npm run install client && npm run build"
+    "heroku-postbuild": "NPM_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "keywords": [],
   "author": "",
